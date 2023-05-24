@@ -3,6 +3,7 @@ module github.com/sintanial/vksdk/v2
 go 1.18
 
 require (
+	github.com/SevereCloud/vksdk/v2 v2.16.0
 	github.com/gorilla/schema v1.2.0
 	github.com/gorilla/websocket v1.5.0
 	github.com/klauspost/compress v1.16.5

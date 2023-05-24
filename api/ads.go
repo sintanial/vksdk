@@ -300,15 +300,15 @@ func (vk *VK) AdsGetAdsLayout(params Params) (response AdsGetAdsLayoutResponse, 
 // }
 
 // TODO: AdsGetCampaignsResponse struct.
-// type AdsGetCampaignsResponse struct{}
+type AdsGetCampaignsResponse []object.AdsCampaign
 
 // TODO: AdsGetCampaigns ...
 //
 // https://vk.com/dev/ads.getCampaigns
-// func (vk *VK) AdsGetCampaigns(params Params) (response AdsGetCampaignsResponse, err error) {
-// 	err = vk.RequestUnmarshal("ads.getCampaigns", &response, params)
-// 	return
-// }
+func (vk *VK) AdsGetCampaigns(params Params) (response AdsGetCampaignsResponse, err error) {
+	err = vk.RequestUnmarshal("ads.getCampaigns", &response, params)
+	return
+}
 
 // TODO: AdsGetCategoriesResponse struct.
 // type AdsGetCategoriesResponse struct{}
