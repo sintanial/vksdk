@@ -3,3 +3,4 @@ vendor/
 *.out
 coverage.txt
 *.test
+.idea
